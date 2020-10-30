@@ -1,0 +1,32 @@
+{
+  "name": "gap-cucumber",
+  "version": "1.0.0",
+  "description": "GAP automation test using cucumber with Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sa-martinezr/gap-cucumber.git"
+  },
+  "keywords": [
+    "cucumber",
+    "javascript",
+    "webdriverio",
+    "automation"
+  ],
+  "author": "Sergio Andrés Martínez Ramírez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sa-martinezr/gap-cucumber/issues"
+  },
+  "homepage": "https://github.com/sa-martinezr/gap-cucumber#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1"
+  }
+}
