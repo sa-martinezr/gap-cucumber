@@ -7,7 +7,7 @@ Then('the page should contain the site logo', () => {
     checkSiteLogo();
 });
 
-Then('the page should contain the {string} of the user signed in', (userName) => {
+Then('the page should contain the name of the user signed in which is {string}', (userName) => {
     checkUserInfo(userName);
 });
 
