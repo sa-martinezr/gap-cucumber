@@ -10,6 +10,10 @@ class Home {
     get userInfo() {
         return $('#user_information > span:nth-child(1)');
     }
+
+    get successfulSignedInMessage() {
+        return $('.flash_notice')
+    }
 }
 
 module.exports = new Home();
