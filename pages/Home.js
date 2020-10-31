@@ -9,6 +9,3 @@ class Home {
 }
 
 module.exports = new Home();
-
-
-///assets/site_title-34b060c1996fa36129429fcfb794655a.png
