@@ -7,10 +7,11 @@ Feature: New Employee
      And the browser is at the "New Employee" page
      When the employee is created with following data:
       | First name | Last name | Email                | Identification | Leader name     | Start working on |
-      | James      | Smith     | jamessmight@gap.com  | 1234567890     | Sergio Martínez | 21-01-2015       |
-
+      | James      | Smith     | jamessmith@gap.com   | 1234567890     | Sergio Martínez | 21-01-2015       |
     Then the page should contain the message "Employee was successfully created."
-    And the new employee information is visible at the "Listing Employees" page
+    And the new employee information is visible at the "Listing Employees" page with the following data:
+      | First name | Last name | Email                | Identification | Leader name     | Start working on |
+      | James      | Smith     | jamessmith@gap.com   | 1234567890     | Sergio Martínez | 21-01-2015       |
 
     Examples:
         | email                               |
