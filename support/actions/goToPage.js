@@ -8,6 +8,7 @@ export default page => {
             break;
         case "New Employee":
             browser.url(newEmployee.url);
+            break;
         default:
             console.log(`Invalid page ${page}`);
     }
