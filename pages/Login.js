@@ -3,23 +3,23 @@ class Login {
         return "/users/sign_in";
     }
 
-    getEmailInput() {
+    get emailInput() {
         return $('#user_email');
     }
 
-    getPasswordInput() {
+    get passwordInput() {
         return $('#user_password');
     }
 
-    getSignInButton() {
+    get signInButton() {
         return $('.submit');
     }
 
     signIn(email, password) {
-        this.getEmailInput.waitForDisplayed(5000);
-        this.getEmailInput.setValue(email);
-        this.getPasswordInput.setValue(password);
-        this.getSignInButton.click();
+        this.emailInput.waitForDisplayed(5000);
+        this.emailInput.setValue(email);
+        this.passwordInput.setValue(password);
+        this.signInButton.click();
     }
 }
 
