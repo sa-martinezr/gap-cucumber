@@ -1,23 +1,19 @@
 import { When } from 'cucumber';
 import createEmployee from "../../support/actions/createEmployee";
+import deleteEmployee from "../../support/actions/deleteEmployee";
+import transformDataTableToObject from "../../support/actions/transformDataTableToObject";
+import goToPage from "../../support/actions/goToPage";
 
 When('the employee is created with following data:', table => {
-    
-    const data = table.hashes();
-    const startWorkingDate = data[0]['Start working on'].split('-');
-    const startWorkingDay = startWorkingDate[0];
-    const startWorkingMonth = parseInt(startWorkingDate[1],10);
-    const startWorkingYear = startWorkingDate[2] ;
-    const newEmployee = {
-        'firstName'         : data[0]['First name'],
-        'lastName'          : data[0]['Last name'],
-        'email'             : data[0]['Email'],
-        'identification'    : data[0]['Identification'],
-        'leaderName'        : data[0]['Leader name'],
-        'startWorkingYear'  : startWorkingYear,
-        'startWorkingMonth' : startWorkingMonth,
-        'startWorkingDay'   : startWorkingDay,
-    };
+    createEmployee(transformDataTableToObject(table.hashes()));
+});
 
-    createEmployee(newEmployee);
+When('the user click the delete button on the record of the existing employee with the following data:', table => {
+
+    //Create the user to delete in order to delete the user correctly
+    goToPage("New Employee");
+    createEmployee(transformDataTableToObject(table.hashes()));
+    goToPage("Listing Employees");
+
+    deleteEmployee(transformDataTableToObject(table.hashes(),false,false));
 });
