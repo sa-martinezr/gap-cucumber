@@ -6,10 +6,10 @@ Feature: Delete Employee
         And the browser is at the "Listing Employees" page
         When the user click the delete button on the record of the existing employee with the following data:
           |First name | Last name | Email                | Identification | Leader name     | Start working on |
-          |James      | Smith     | jamessmith@gap.com   | 1234567890     | Sergio Martínez | 21-01-2015       |
+          |James      | Smith     | jamessmith2@gap.com   | 1234567890     | Sergio Martínez | 20-01-2015       |
         Then the employee information is not present on the page
           |First name | Last name | Email                | Identification | Leader name     | Start working on |
-          |James      | Smith     | jamessmith@gap.com   | 1234567890     | Sergio Martínez | 21-01-2015       |
+          |James      | Smith     | jamessmith2@gap.com   | 1234567890     | Sergio Martínez | 20-01-2015       |
 Examples:
   | email                               |
   | gap-automation-test@mailinator.com  |
