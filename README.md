@@ -43,6 +43,6 @@ Check this table to run the features:
 
    Command | Feature to Run
    ------------ | -------------
-   `npm run test:LoginFeature` | Run the Login.feature
+   `npm run test:Login` | Run the Login.feature
    `npm run test:NewEmployee` |  Run the NewEMployee.feature
    `npm run test:DeleteEmployee` | Run the DeleteEmployee.feature

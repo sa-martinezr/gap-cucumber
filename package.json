@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/wdio wdio.conf.js",
-    "test:LoginFeature": "./node_modules/.bin/wdio wdio.conf.js --spec ./features/Authentication/Login.feature",
+    "test:Login": "./node_modules/.bin/wdio wdio.conf.js --spec ./features/Authentication/Login.feature",
     "test:NewEmployee": "./node_modules/.bin/wdio wdio.conf.js --spec ./features/Employees/NewEmployee.feature",
     "test:DeleteEmployee": "./node_modules/.bin/wdio wdio.conf.js --spec ./features/Employees/DeleteEmployee.feature",
     "gherkin-lint": "./node_modules/.bin/gherkin-lint -c ./.gherkin-lintrc ./features"
