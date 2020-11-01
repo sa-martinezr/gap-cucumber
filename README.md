@@ -7,7 +7,7 @@ This project has 3 features under test (Login, Create employee and Delete employ
 - Cucumber
 - WebDriverIO selenium-standalone
 
-## Configuration
+## Configuration:
 
 ### Prerequisites:
 1. Java, check here to download it [download Java](https://www.oracle.com/downloads/)
@@ -19,7 +19,7 @@ This project has 3 features under test (Login, Create employee and Delete employ
 `git clone https://github.com/sa-martinezr/gap-cucumber.git`
 2. Install all the dependencies with:  
 `npm install`
-3. Create a .env file in the root directory. Copy the .env.example file located at the root directory and rename it.
+3. Create a **.env** file in the root directory. Copy the **.env.example** file located at the root directory and rename it.
 4. Set the env variables to run the tests as following:
 
    Variable Name | Value
@@ -44,5 +44,5 @@ Check this table to run the features:
    Command | Feature to Run
    ------------ | -------------
    `npm run test:Login` | Run the Login.feature
-   `npm run test:NewEmployee` |  Run the NewEMployee.feature
+   `npm run test:NewEmployee` |  Run the NewEmployee.feature
    `npm run test:DeleteEmployee` | Run the DeleteEmployee.feature
