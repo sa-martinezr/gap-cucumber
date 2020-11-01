@@ -3,6 +3,6 @@
  * @param {string} dateToTransform
  */
 export default dateToTransform => {
-    const transformedDate = dateToTransform.split('-');
-    return `${transformedDate[1]}/${transformedDate[0]}/${transformedDate[2]}`;
+  const transformedDate = dateToTransform.split('-');
+  return `${transformedDate[1]}/${transformedDate[0]}/${transformedDate[2]}`;
 };

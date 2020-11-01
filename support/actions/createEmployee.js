@@ -1,5 +1,5 @@
-import newEmployeePage from "../../pages/NewEmployee";
+import newEmployeePage from '../../pages/NewEmployee';
 
 export default newEmployee => {
-    newEmployeePage.createEmployee(newEmployee);
+  newEmployeePage.createEmployee(newEmployee);
 };

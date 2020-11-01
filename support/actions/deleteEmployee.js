@@ -1,5 +1,5 @@
-import employeeList from "../../pages/EmployeeList";
+import employeeList from '../../pages/EmployeeList';
 
 export default employeeToDelete => {
-    employeeList.deleteEmployee(employeeToDelete);
-}
+  employeeList.deleteEmployee(employeeToDelete);
+};
